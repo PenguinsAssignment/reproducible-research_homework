@@ -4,7 +4,7 @@
 library(ggplot2)
 library(gridExtra)
 
-set.seed(2024) #for reproducibility 
+#
 
 random_walk  <- function (n_steps) {
   
@@ -30,6 +30,7 @@ random_walk  <- function (n_steps) {
   
 }
 
+set.seed(2023) # ensures reproducible random data1 in plot1
 data1 <- random_walk(500)
 
 plot1 <- ggplot(aes(x = x, y = y), data = data1) +
@@ -42,6 +43,7 @@ plot1 <- ggplot(aes(x = x, y = y), data = data1) +
   
   ylab("y-coordinate")
 
+set.seed(2024) # ensures reproducible random data2 in plot2
 data2 <- random_walk(500)
 
 plot2 <- ggplot(aes(x = x, y = y), data = data2) +
