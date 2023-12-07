@@ -2,7 +2,7 @@
 
 ## Questions 1-3
 
-####See README.md in repository entitled 'logisitc_growth'
+#### See README.md in repository entitled 'logisitc_growth'
 
 link: https://github.com/PenguinsAssignment/logistic_growth
 
