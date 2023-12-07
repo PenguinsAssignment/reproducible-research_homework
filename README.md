@@ -1,7 +1,61 @@
 # Reproducible research: version control and R
 
-\# INSERT ANSWERS HERE #
+## Question 4
 
+### i) Observations: executing the code to generate random walks
+
+The code provided models random motion to generate a path - a random walk. The code generates two plots of random walks in 500 steps with paths mapped out in space on a two dimensional coordinate grid. A blue colour gradient illustrates the course of the path in time steps.  At time step 1, the coordinate position of the random walk is set to (0,0). A loop then runs between steps 2 and n (set here as n_steps = 500); the size of the steps is set (h = 0.25) and a random angle of the next steps direction in space is generated within the bounds of 0 and 2π (a complete circle). The code creates two plots to show two walks simulations. Each time the code is run, a different random walk is simulated and the output plots observed are different.
+
+#### Example of two random walks from the code output 
+<img width="956" alt="image" src="https://github.com/PenguinsAssignment/reproducible-research_homework/assets/150163891/e329913f-b009-4732-b705-47a24005a51e">
+
+
+### ii) Using random seeds
+
+A random seed is an integer, or a set of integers that set an initial starting point in computational random number generation (James _et al_. 2013). Setting a seed will ensure that when generating a set of random nubers, the exact same set of random numbers can be generated again (James _et al_. 2013). This has key applications for consistency and reproducibility when trying to repeat code that incorporates random number generation, and in sharing this code. The receiver of the shared code should generate the same output. The set.seed() function on R is the standard method to specify seeds when randomly generating numbers (Adler, 2012). The function is able to take on any arbitrary integer as a value passed to into it. Reproducibility in the random walk script would be acheived by controlling for randomness in repeat code runs with an edit to add in set.seed().
+
+### iii) Script edit:  generating a reproducible simulation of Brownian motion
+
+(link to script here)
+
+### iv) Script edit: showing the modification in comparison view
+
+The edit I added: 
+```
+set.seed(2024)
+```
+
+
+## Question 5
+
+### i) Investigating the Cui _et al_. (2014) data 
+
+### ii) Applying a transformation to fit a linear model 
+
+### iii) Finding the exponent and scaling factor
+
+### iv) Code to produce figure 
+
+#### Code
+
+#### Output
+
+
+## Bonus Question
+
+### Reproducibility vs replicability in scientific research
+
+(The Turing Way Community. 2022)
+
+# References
+
+Joseph Adler (2012). R in a Nutshell, 2nd Edition. Sebastopol :O'Reilly Media, Inc.
+
+Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani. (2013). An introduction to statistical learning : with applications in R. New York :Springer.
+
+The Turing Way Community. (2022). The Turing Way: A handbook for reproducible, ethical and collaborative research. Zenodo. doi: 10.5281/zenodo.3233853.
+
+------------------ 
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
