@@ -143,7 +143,7 @@ plot
 ```
 (see output in question five of the instructions below)
 
-Link to all code printed above in one R script (within this repository): 
+Link to all code printed above in one R script 'viral_data.R' (within this repository): https://github.com/PenguinsAssignment/reproducible-research_homework/blob/main/viral_data.R
 
 ### v) estimated volume of a 300 kb dsDNA virus
 
