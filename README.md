@@ -1,5 +1,11 @@
 # Reproducible research: version control and R
 
+## Questions 1-3
+
+####See README.md in repository entitled 'logisitc_growth'
+
+link: https://github.com/PenguinsAssignment/logistic_growth
+
 ## Question 4
 
 ### i) Observations: executing the code to generate random walks
